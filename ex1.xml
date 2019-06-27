@@ -1,0 +1,36 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="initializes_setup" id="1" x="80" y="40">
+    <next>
+      <block type="initializes_loop" id="2">
+        <statement name="CONTENT">
+          <block type="inout_buildin_led" id="27">
+            <field name="STAT">HIGH</field>
+            <next>
+              <block type="delay_custom" id="40" inline="false">
+                <value name="DELAY_TIME">
+                  <block type="math_number" id="41">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="inout_buildin_led" id="28">
+                    <field name="STAT">LOW</field>
+                    <next>
+                      <block type="delay_custom" id="42" inline="false">
+                        <value name="DELAY_TIME">
+                          <block type="math_number" id="43">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
